@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0a0a0a;
+  --bg-2: #111111;
+  --bg-3: #181818;
+  --accent: #c8933a;
+  --accent-dim: #9a6e27;
+  --text: #e8e4de;
+  --text-dim: #8a857e;
+  --text-faint: #3d3a36;
+}
+
+/* Custom Scrollbar matching thekisseh.com */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+::-webkit-scrollbar-thumb {
+  background: #3d3a36;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c8933a;
+}
+
+/* Subtle Film / Ambient Noise overlay */
+.bg-ambient-glow {
+  background: 
+    radial-gradient(circle at 50% 0%, rgba(200, 147, 58, 0.08) 0%, transparent 60%),
+    radial-gradient(circle at 85% 35%, rgba(200, 147, 58, 0.04) 0%, transparent 50%),
+    radial-gradient(circle at 15% 75%, rgba(200, 147, 58, 0.03) 0%, transparent 50%);
+}
+
+.bg-dot-grid {
+  background-image: radial-gradient(rgba(200, 147, 58, 0.08) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* Button & Card Micro-Interactions */
+.transition-smooth {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
