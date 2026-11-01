@@ -3,45 +3,58 @@
 @tailwind utilities;
 
 :root {
-  --bg: #0a0a0a;
-  --bg-2: #111111;
-  --bg-3: #181818;
-  --accent: #c8933a;
-  --accent-dim: #9a6e27;
-  --text: #e8e4de;
-  --text-dim: #8a857e;
-  --text-faint: #3d3a36;
+  --apple-bg: #000000;
+  --apple-card: rgba(26, 26, 30, 0.72);
+  --apple-border: rgba(255, 255, 255, 0.12);
+  --apple-blue: #2997ff;
 }
 
-/* Custom Scrollbar matching thekisseh.com */
-::-webkit-scrollbar {
-  width: 5px;
+/* Remove default scrollbars for pure Apple UI elegance */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
 }
-::-webkit-scrollbar-track {
-  background: #0a0a0a;
-}
-::-webkit-scrollbar-thumb {
-  background: #3d3a36;
-  border-radius: 2px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #c8933a;
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-/* Subtle Film / Ambient Noise overlay */
-.bg-ambient-glow {
+/* Apple Frosted Glass Morphism */
+.apple-glass {
+  background: rgba(24, 24, 28, 0.75);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.8), inset 0 1px 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.apple-glass-card {
+  background: radial-gradient(120% 120% at 50% 0%, rgba(35, 35, 42, 0.7) 0%, rgba(18, 18, 22, 0.75) 100%);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.75), inset 0 1px 1px 0 rgba(255, 255, 255, 0.18);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.apple-glass-card:hover {
+  border-color: rgba(255, 255, 255, 0.25);
+  transform: translateY(-4px);
+  box-shadow: 0 35px 70px -15px rgba(0, 0, 0, 0.9), inset 0 1px 1px 0 rgba(255, 255, 255, 0.25);
+}
+
+/* Apple Ambient Glow Canvas */
+.apple-canvas-bg {
   background: 
-    radial-gradient(circle at 50% 0%, rgba(200, 147, 58, 0.08) 0%, transparent 60%),
-    radial-gradient(circle at 85% 35%, rgba(200, 147, 58, 0.04) 0%, transparent 50%),
-    radial-gradient(circle at 15% 75%, rgba(200, 147, 58, 0.03) 0%, transparent 50%);
+    radial-gradient(circle at 10% 20%, rgba(41, 151, 255, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 55% 85%, rgba(245, 166, 35, 0.06) 0%, transparent 45%),
+    radial-gradient(circle at 90% 25%, rgba(48, 209, 88, 0.05) 0%, transparent 40%),
+    #000000;
 }
 
-.bg-dot-grid {
-  background-image: radial-gradient(rgba(200, 147, 58, 0.08) 1px, transparent 1px);
-  background-size: 32px 32px;
-}
-
-/* Button & Card Micro-Interactions */
-.transition-smooth {
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+/* Subtle Apple Home Mesh Grid */
+.apple-grid {
+  background-size: 48px 48px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
 }

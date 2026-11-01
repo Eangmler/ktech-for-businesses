@@ -1,29 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import WhatsAppIcon from './WhatsAppIcon';
 
 export default function WhatsAppFloat() {
-  const [visible, setVisible] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setVisible(window.scrollY > 400);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  if (!visible) return null;
-
   return (
-    <aside aria-label="Quick WhatsApp assistance" className="fixed bottom-6 right-6 z-40 transition-all duration-300 animate-fade-in">
+    <aside aria-label="Quick WhatsApp assistance" className="fixed bottom-6 right-6 z-40 hidden lg:block">
       <a
         href="https://wa.me/233248147952?text=Hello%20kTech%2C%20I%20am%20interested%20in%20enterprise%20IT%20and%20automation%20systems."
         target="_blank"
         rel="noopener noreferrer"
-        className="group flex items-center gap-2.5 px-4 py-3 bg-[#c8933a] text-black font-sans text-xs font-semibold tracking-wider uppercase shadow-[0_4px_20px_rgba(200,147,58,0.4)] hover:bg-white hover:text-black hover:scale-105 transition-all duration-300"
+        className="group flex items-center gap-2 px-3.5 py-2.5 rounded-full apple-glass text-white text-xs font-medium hover:border-white/30 transition-all duration-300 shadow-apple-card hover:scale-105 active:scale-95"
       >
-        <WhatsAppIcon className="w-4 h-4" />
-        <span className="hidden sm:inline">Chat on WhatsApp</span>
+        <span className="w-2 h-2 rounded-full bg-[#30d158] animate-pulse"></span>
+        <WhatsAppIcon className="w-4 h-4 text-[#30d158]" />
+        <span className="text-[11px] text-[#f5f5f7]">Quick Chat</span>
       </a>
     </aside>
   );

@@ -1,8 +1,8 @@
 import React from 'react';
-import { Check, Star, ArrowRight, ShieldCheck, Sparkles } from 'lucide-react';
+import { Check, Star, ArrowRight, Zap, Shield, Sparkles } from 'lucide-react';
 import WhatsAppIcon from './WhatsAppIcon';
 
-export default function Pricing() {
+export default function Pricing({ onNext }) {
   const tiers = [
     {
       id: 'basic',
@@ -12,7 +12,7 @@ export default function Pricing() {
       target: 'Micro-hustles',
       setupPrice: 'GH₵ 1,500',
       monthlyPrice: 'GH₵ 500',
-      description: 'Foundational digital setup for solo operators and budding ventures.',
+      description: 'Essential foundational setup for solo founders and micro-teams.',
       features: [
         '1-2 Professional Emails',
         'Domain Registration Only',
@@ -30,7 +30,7 @@ export default function Pricing() {
       target: 'Growing retail/e-commerce brands',
       setupPrice: 'GH₵ 3,500',
       monthlyPrice: 'GH₵ 1,500',
-      description: 'Complete operational automation engine designed to capture and close every customer.',
+      description: 'Complete automation architecture designed to capture and close every inbound lead.',
       features: [
         'Up to 10 Emails + Shared Drives',
         'Domain + Landing Page Management',
@@ -48,7 +48,7 @@ export default function Pricing() {
       target: 'Large established enterprises',
       setupPrice: 'GH₵ 8,500',
       monthlyPrice: 'GH₵ 4,500',
-      description: 'Full-spectrum systems architecture, custom automation workflows, and high-security compliance.',
+      description: 'End-to-end bespoke IT systems, autonomous voice & CRM integrations, and security policies.',
       features: [
         'Unlimited Emails + Advanced Security',
         'Full Custom Website Management',
@@ -61,134 +61,103 @@ export default function Pricing() {
   ];
 
   return (
-    <section id="pricing" className="py-24 sm:py-32 px-6 sm:px-12 lg:px-20 bg-[#0a0a0a] relative">
-      {/* Ambient background glow behind the central target card */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] bg-[#c8933a]/6 blur-[150px] rounded-full pointer-events-none"></div>
+    <section className="w-screen h-screen flex-shrink-0 flex items-center justify-center px-6 sm:px-12 lg:px-20 pt-20 pb-24 snap-start relative overflow-hidden">
+      {/* Apple Keynote Ambient Aura */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[550px] bg-[#2997ff]/8 blur-[180px] rounded-full pointer-events-none"></div>
 
-      <div className="max-w-7xl mx-auto relative z-10">
-        {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16 sm:mb-20">
-          <div className="inline-flex items-center gap-3 mb-4">
-            <span className="w-6 h-px bg-[#c8933a]"></span>
-            <span className="font-mono text-[11px] tracking-ultra text-[#c8933a] uppercase font-medium">
+      <div className="max-w-7xl w-full mx-auto flex flex-col justify-center h-full max-h-[88vh]">
+        {/* Apple Section Header */}
+        <div className="text-center max-w-2xl mx-auto mb-6 sm:mb-8">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 mb-2">
+            <span className="w-2 h-2 rounded-full bg-[#2997ff]"></span>
+            <span className="text-[11px] font-medium tracking-tight text-[#f5f5f7] uppercase font-mono">
               Transparent Engineering Retainers
             </span>
-            <span className="w-6 h-px bg-[#c8933a]"></span>
           </div>
 
-          <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl text-[#e8e4de] font-light tracking-tight leading-[1.1]">
-            Services &amp;{' '}
-            <span className="italic text-[#c8933a] font-normal">Pricing</span>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tightest text-white">
+            Services &amp; Pricing
           </h2>
-
-          <p className="font-sans text-sm sm:text-base text-[#8a857e] mt-4 font-light leading-relaxed">
-            Eliminate operational overhead with transparent setup fees and dedicated monthly management retainers.
+          <p className="text-xs sm:text-sm text-[#86868b] mt-1.5 font-normal">
+            Predictable flat-rate engineering setups with dedicated monthly systems oversight.
           </p>
         </div>
 
-        {/* 3-Column Pricing Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch pt-6">
+        {/* 3-Column Apple Store Card Matrix */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 sm:gap-6 items-stretch">
           {tiers.map((tier) => {
             const isStandard = tier.highlighted;
 
             return (
               <div
                 key={tier.id}
-                className={`relative flex flex-col justify-between transition-all duration-300 ${
+                className={`rounded-apple flex flex-col justify-between p-6 sm:p-7 transition-all duration-400 relative ${
                   isStandard
-                    ? 'bg-[#141414] border-2 border-[#c8933a] shadow-gold-glow lg:-translate-y-4 rounded-none p-8 sm:p-10 z-20'
-                    : 'bg-[#111111] border border-[#3d3a36] hover:border-[#8a857e] p-8 sm:p-10 z-10'
+                    ? 'apple-glass border-2 border-[#2997ff] shadow-apple-glow scale-[1.02] z-20 bg-zinc-900/90'
+                    : 'apple-glass-card z-10'
                 }`}
               >
-                {/* Visual Pill Badge for Standard Package */}
+                {/* Apple Recommended Badge for Standard */}
                 {isStandard && (
-                  <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[#c8933a] text-black font-mono text-[10px] font-bold tracking-widest uppercase px-4 py-1 flex items-center gap-1.5 shadow-md">
-                    <Sparkles className="w-3 h-3 fill-black" />
+                  <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[#2997ff] text-white text-[10px] font-semibold tracking-wider uppercase px-3.5 py-1 rounded-full shadow-md flex items-center gap-1.5">
+                    <Sparkles className="w-3 h-3 fill-white" />
                     <span>Most Popular</span>
                   </div>
                 )}
 
                 <div>
-                  {/* Card Header: Name & Target */}
-                  <div className="flex items-start justify-between mb-4">
+                  {/* Card Title & Target */}
+                  <div className="flex items-start justify-between mb-3">
                     <div>
-                      <h3 className="font-serif text-3xl text-[#e8e4de] font-light">
+                      <h3 className="text-2xl font-bold text-white tracking-tight">
                         {tier.name}
                       </h3>
-                      <p className="font-mono text-xs text-[#c8933a] mt-1 tracking-wide">
-                        Target: <span className="text-[#e8e4de]">{tier.target}</span>
-                      </p>
+                      <div className="text-xs text-[#86868b] mt-0.5">
+                        Target: <span className="text-[#f5f5f7] font-medium">{tier.target}</span>
+                      </div>
                     </div>
-
-                    {!isStandard && (
-                      <span className="font-mono text-[10px] uppercase tracking-widest text-[#8a857e] px-2 py-0.5 border border-[#3d3a36]">
-                        {tier.id === 'basic' ? 'Starter' : 'Enterprise'}
-                      </span>
-                    )}
                   </div>
 
-                  <p className="text-xs text-[#8a857e] font-light leading-relaxed mb-6 min-h-[36px]">
-                    {tier.description}
-                  </p>
-
-                  {/* Pricing Display */}
-                  <div className="py-6 border-t border-b border-[#3d3a36]/60 my-6 bg-[#0a0a0a]/50 px-4 -mx-4 sm:-mx-6 sm:px-6">
+                  {/* Pricing Box */}
+                  <div className="py-4 my-3 border-t border-b border-white/10">
                     <div className="flex items-baseline gap-2">
-                      <span className="font-serif text-3xl sm:text-4xl font-light text-[#e8e4de]">
+                      <span className="text-3xl sm:text-4xl font-bold tracking-tight text-white font-sans">
                         {tier.setupPrice}
                       </span>
-                      <span className="font-mono text-xs uppercase tracking-widest text-[#8a857e]">
-                        setup
-                      </span>
+                      <span className="text-xs uppercase font-mono text-[#86868b]">setup</span>
                     </div>
-
-                    <div className="flex items-baseline gap-2 mt-2 pt-2 border-t border-[#3d3a36]/30">
-                      <span className="font-mono text-lg font-medium text-[#c8933a]">
-                        {tier.monthlyPrice}
-                      </span>
-                      <span className="font-mono text-[11px] uppercase tracking-wider text-[#8a857e]">
-                        / monthly retainer
-                      </span>
+                    <div className="flex items-baseline gap-1.5 mt-1 text-[#2997ff] font-mono text-sm font-semibold">
+                      <span>{tier.monthlyPrice}</span>
+                      <span className="text-xs text-[#86868b] font-normal">/ monthly</span>
                     </div>
                   </div>
 
-                  {/* Features List */}
-                  <div className="space-y-4 mb-8">
-                    <div className="font-mono text-[11px] tracking-widest uppercase text-[#8a857e]">
-                      Included Capabilities:
-                    </div>
-                    <ul className="space-y-3.5">
-                      {tier.features.map((feature, idx) => (
-                        <li key={idx} className="flex items-start gap-3 text-sm text-[#e8e4de] font-light">
-                          <span
-                            className={`p-0.5 mt-0.5 shrink-0 rounded ${
-                              isStandard
-                                ? 'text-[#c8933a] bg-[#c8933a]/10'
-                                : 'text-[#8a857e] bg-[#181818]'
-                            }`}
-                          >
-                            <Check className="w-3.5 h-3.5" />
-                          </span>
-                          <span className="leading-snug">{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+                  {/* Feature Checklist */}
+                  <ul className="space-y-2.5 my-4">
+                    {tier.features.map((feat, idx) => (
+                      <li key={idx} className="flex items-start gap-2.5 text-xs text-[#f5f5f7]">
+                        <span className={`p-0.5 mt-0.5 rounded-full shrink-0 ${isStandard ? 'bg-[#2997ff]/20 text-[#2997ff]' : 'bg-white/10 text-white/70'}`}>
+                          <Check className="w-3 h-3" />
+                        </span>
+                        <span className="leading-snug">{feat}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
 
-                {/* Card CTA Button */}
-                <div className="pt-4">
+                {/* Apple Store Button */}
+                <div className="pt-3">
                   <a
                     href={`https://wa.me/233248147952?text=${encodeURIComponent(tier.whatsappMessage)}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`w-full flex items-center justify-center gap-2.5 py-4 font-sans text-xs tracking-widest uppercase font-semibold transition-all duration-300 ${
+                    className={`w-full py-3 rounded-full flex items-center justify-center gap-2 text-xs font-semibold tracking-tight transition-all duration-300 ${
                       isStandard
-                        ? 'bg-[#c8933a] text-black hover:bg-white hover:text-black shadow-lg shadow-[#c8933a]/20'
-                        : 'border border-[#3d3a36] text-[#e8e4de] hover:border-[#c8933a] hover:text-[#c8933a] bg-transparent'
+                        ? 'bg-white text-black hover:bg-zinc-200 shadow-[0_4px_20px_rgba(255,255,255,0.25)] hover:scale-[1.02] active:scale-[0.98]'
+                        : 'bg-white/10 hover:bg-white/20 text-white border border-white/15'
                     }`}
                   >
-                    <WhatsAppIcon className="w-4 h-4" />
+                    <WhatsAppIcon className="w-3.5 h-3.5" />
                     <span>{tier.ctaText}</span>
                   </a>
                 </div>
@@ -197,41 +166,11 @@ export default function Pricing() {
           })}
         </div>
 
-        {/* Small Italicized Note Required by the Prompt */}
-        <div className="mt-12 text-center">
-          <p className="font-serif italic text-sm sm:text-base text-[#8a857e] max-w-3xl mx-auto leading-relaxed">
+        {/* Required Italicized Subscription Note */}
+        <div className="mt-4 sm:mt-6 text-center">
+          <p className="italic text-xs sm:text-sm text-[#86868b] max-w-2xl mx-auto leading-relaxed">
             Note: Clients pay for their own software subscriptions directly; pricing reflects engineering, setup, and ongoing management.
           </p>
-        </div>
-
-        {/* FAQ / Guarantees Strip */}
-        <div className="mt-16 pt-10 border-t border-[#3d3a36]/60 grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left">
-          <div className="p-4 border border-[#3d3a36]/40 bg-[#111111]/40">
-            <span className="font-mono text-xs uppercase tracking-widest text-[#c8933a] block mb-1">
-              Zero Vendor Lock-in
-            </span>
-            <p className="text-xs text-[#8a857e] font-light">
-              All Google Workspace, domains, and API credentials remain 100% owned by your business.
-            </p>
-          </div>
-
-          <div className="p-4 border border-[#3d3a36]/40 bg-[#111111]/40">
-            <span className="font-mono text-xs uppercase tracking-widest text-[#c8933a] block mb-1">
-              48h Fast Onboarding
-            </span>
-            <p className="text-xs text-[#8a857e] font-light">
-              We audit your domain DNS, provision your users, and test your WhatsApp flows within 2 business days.
-            </p>
-          </div>
-
-          <div className="p-4 border border-[#3d3a36]/40 bg-[#111111]/40">
-            <span className="font-mono text-xs uppercase tracking-widest text-[#c8933a] block mb-1">
-              Direct Engineering Line
-            </span>
-            <p className="text-xs text-[#8a857e] font-light">
-              Retainer clients receive priority WhatsApp support for system changes, new staff onboarding, and security checks.
-            </p>
-          </div>
         </div>
       </div>
     </section>

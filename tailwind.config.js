@@ -7,34 +7,56 @@ export default {
   theme: {
     extend: {
       colors: {
-        brand: {
-          bg: '#0a0a0a',
-          'bg-2': '#111111',
-          'bg-3': '#181818',
-          card: '#131313',
-          'card-hover': '#1a1a1a',
-          accent: '#c8933a',
-          'accent-dim': '#9a6e27',
-          'accent-light': '#deb368',
-          text: '#e8e4de',
-          'text-dim': '#8a857e',
-          'text-faint': '#3d3a36',
-          border: '#2a2724',
-          'border-light': '#3d3a36',
+        apple: {
+          bg: '#000000',
+          'bg-secondary': '#0b0b0e',
+          'card': 'rgba(24, 24, 28, 0.72)',
+          'card-hover': 'rgba(34, 34, 40, 0.88)',
+          'border': 'rgba(255, 255, 255, 0.1)',
+          'border-light': 'rgba(255, 255, 255, 0.2)',
+          'accent': '#2997ff',         /* Apple signature electric blue */
+          'accent-hover': '#0071e3',
+          'amber': '#f5a623',          /* Apple Home warm amber */
+          'gold': '#e3a857',
+          'emerald': '#30d158',        /* Apple Home active green */
+          'text': '#f5f5f7',
+          'text-dim': '#86868b',
+          'text-faint': '#424245',
         }
       },
       fontFamily: {
-        serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
-        sans: ['"Inter"', 'system-ui', 'sans-serif'],
-        mono: ['"Space Mono"', 'monospace'],
+        sans: [
+          '-apple-system',
+          'BlinkMacSystemFont',
+          '"SF Pro Display"',
+          '"SF Pro Text"',
+          '"Inter"',
+          'system-ui',
+          'sans-serif',
+        ],
+        mono: [
+          '"SF Mono"',
+          '"Space Mono"',
+          'Menlo',
+          'monospace',
+        ],
       },
       letterSpacing: {
+        tightest: '-0.04em',
+        tighter: '-0.03em',
+        tight: '-0.02em',
+        wide: '0.08em',
         widest: '0.15em',
-        ultra: '0.22em',
       },
       boxShadow: {
-        'gold-subtle': '0 0 35px -5px rgba(200, 147, 58, 0.15)',
-        'gold-glow': '0 0 50px -10px rgba(200, 147, 58, 0.3)',
+        'apple-card': '0 25px 60px -15px rgba(0, 0, 0, 0.8)',
+        'apple-glow': '0 0 60px -10px rgba(41, 151, 255, 0.3)',
+        'apple-gold-glow': '0 0 60px -10px rgba(227, 168, 87, 0.3)',
+        'apple-inner': 'inset 0 1px 1px 0 rgba(255, 255, 255, 0.18)',
+      },
+      borderRadius: {
+        'apple': '28px',
+        'apple-lg': '36px',
       }
     },
   },
