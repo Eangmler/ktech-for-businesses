@@ -61,7 +61,7 @@ export default function Navbar() {
         {/* Desktop CTA */}
         <div className="hidden md:flex items-center gap-4">
           <a
-            href="https://wa.me/233000000000?text=Hello%20kTech%2C%20I%20am%20interested%20in%20enterprise%20IT%20and%20automation%20systems%20for%20my%20business."
+            href="https://wa.me/233248147952?text=Hello%20kTech%2C%20I%20am%20interested%20in%20enterprise%20IT%20and%20automation%20systems%20for%20my%20business."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-4 py-2 border border-[#c8933a] text-[#c8933a] hover:bg-[#c8933a] hover:text-black font-sans text-xs font-medium tracking-widest uppercase transition-all duration-300"
@@ -115,7 +115,7 @@ export default function Navbar() {
 
           <div className="pt-6">
             <a
-              href="https://wa.me/233000000000?text=Hello%20kTech%2C%20I%20am%20interested%20in%20enterprise%20IT%20and%20automation%20systems%20for%20my%20business."
+              href="https://wa.me/233248147952?text=Hello%20kTech%2C%20I%20am%20interested%20in%20enterprise%20IT%20and%20automation%20systems%20for%20my%20business."
               target="_blank"
               rel="noopener noreferrer"
               className="w-full flex items-center justify-center gap-2 py-4 bg-[#c8933a] text-black font-sans text-xs font-semibold tracking-widest uppercase hover:bg-white transition-all shadow-lg"

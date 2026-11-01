@@ -36,7 +36,7 @@ export default function Footer() {
             </a>
 
             <a
-              href="https://wa.me/233000000000?text=Hello%20kTech%2C%20I%20am%20reaching%20out%20from%20the%20website%20footer."
+              href="https://wa.me/233248147952?text=Hello%20kTech%2C%20I%20am%20reaching%20out%20from%20the%20website%20footer."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2 border border-[#c8933a] text-[#c8933a] hover:bg-[#c8933a] hover:text-black font-sans text-xs font-semibold tracking-widest uppercase transition-all duration-300"

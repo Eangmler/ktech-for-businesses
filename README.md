@@ -87,6 +87,4 @@ git push -u origin main
 
 ## ⚙️ Customizing Your WhatsApp Phone Number
 
-Open `src/components/Hero.jsx`, `Navbar.jsx`, `Pricing.jsx`, `Footer.jsx`, and `WhatsAppFloat.jsx`:
-
-Replace `233000000000` with your active Ghana WhatsApp number in international format (e.g., `23354XXXXXXX` without `+` or leading `0`).
+Directly configured with your WhatsApp business line: `+233 24 814 7952` (`233248147952`). All inquiry links across the Hero, Pricing, Case Study, and Footer route directly to this number with context-aware lead messages.

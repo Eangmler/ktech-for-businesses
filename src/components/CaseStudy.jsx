@@ -161,7 +161,7 @@ export default function CaseStudy() {
           </div>
 
           <a
-            href="https://wa.me/233000000000?text=Hello%20kTech%2C%20I%20read%20the%20Case%20Study%20and%20want%20to%20audit%20my%20business%20systems."
+            href="https://wa.me/233248147952?text=Hello%20kTech%2C%20I%20read%20the%20Case%20Study%20and%20want%20to%20audit%20my%20business%20systems."
             target="_blank"
             rel="noopener noreferrer"
             className="shrink-0 inline-flex items-center gap-2 text-xs font-mono tracking-widest text-[#c8933a] hover:text-white uppercase transition-colors"

@@ -179,7 +179,7 @@ export default function Pricing() {
                 {/* Card CTA Button */}
                 <div className="pt-4">
                   <a
-                    href={`https://wa.me/233000000000?text=${encodeURIComponent(tier.whatsappMessage)}`}
+                    href={`https://wa.me/233248147952?text=${encodeURIComponent(tier.whatsappMessage)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className={`w-full flex items-center justify-center gap-2.5 py-4 font-sans text-xs tracking-widest uppercase font-semibold transition-all duration-300 ${

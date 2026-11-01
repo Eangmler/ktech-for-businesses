@@ -41,7 +41,7 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2 mb-16">
           {/* Primary WhatsApp CTA Button */}
           <a
-            href="https://wa.me/233000000000?text=Hello%20kTech%2C%20I%20am%20interested%20in%20enterprise%20IT%20and%20automation%20systems%20for%20my%20business."
+            href="https://wa.me/233248147952?text=Hello%20kTech%2C%20I%20am%20interested%20in%20enterprise%20IT%20and%20automation%20systems%20for%20my%20business."
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex items-center justify-center gap-3 px-8 py-4 bg-[#c8933a] text-black font-sans text-xs sm:text-sm font-semibold tracking-widest uppercase hover:bg-white hover:text-black transition-all duration-300 shadow-[0_0_25px_rgba(200,147,58,0.25)] hover:shadow-[0_0_35px_rgba(255,255,255,0.4)]"
