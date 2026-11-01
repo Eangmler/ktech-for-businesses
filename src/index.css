@@ -18,8 +18,8 @@
   scrollbar-width: none;
 }
 
-/* Apple Frosted Glass Morphism */
-.apple-glass {
+/* Apple Frosted Glass Morphism - Dark Mode (Default) */
+.dark .apple-glass {
   background: rgba(24, 24, 28, 0.75);
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(30px);
@@ -27,7 +27,7 @@
   box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.8), inset 0 1px 1px 0 rgba(255, 255, 255, 0.15);
 }
 
-.apple-glass-card {
+.dark .apple-glass-card {
   background: radial-gradient(120% 120% at 50% 0%, rgba(35, 35, 42, 0.7) 0%, rgba(18, 18, 22, 0.75) 100%);
   backdrop-filter: blur(25px);
   -webkit-backdrop-filter: blur(25px);
@@ -36,14 +36,38 @@
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.apple-glass-card:hover {
+.dark .apple-glass-card:hover {
   border-color: rgba(255, 255, 255, 0.25);
   transform: translateY(-4px);
   box-shadow: 0 35px 70px -15px rgba(0, 0, 0, 0.9), inset 0 1px 1px 0 rgba(255, 255, 255, 0.25);
 }
 
-/* Apple Ambient Glow Canvas */
-.apple-canvas-bg {
+/* Apple Frosted Glass Morphism - Light Mode */
+.light .apple-glass {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.07), inset 0 1px 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.light .apple-glass-card {
+  background: radial-gradient(120% 120% at 50% 0%, rgba(255, 255, 255, 0.92) 0%, rgba(245, 245, 247, 0.85) 100%);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.06), inset 0 1px 1px 0 rgba(255, 255, 255, 0.95);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.light .apple-glass-card:hover {
+  border-color: rgba(0, 0, 0, 0.16);
+  transform: translateY(-4px);
+  box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.12), inset 0 1px 1px 0 rgba(255, 255, 255, 1);
+}
+
+/* Apple Ambient Canvas Backgrounds */
+.dark .apple-canvas-bg {
   background: 
     radial-gradient(circle at 10% 20%, rgba(41, 151, 255, 0.08) 0%, transparent 40%),
     radial-gradient(circle at 55% 85%, rgba(245, 166, 35, 0.06) 0%, transparent 45%),
@@ -51,10 +75,25 @@
     #000000;
 }
 
-/* Subtle Apple Home Mesh Grid */
-.apple-grid {
+.light .apple-canvas-bg {
+  background: 
+    radial-gradient(circle at 10% 20%, rgba(41, 151, 255, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 55% 85%, rgba(245, 166, 35, 0.06) 0%, transparent 45%),
+    radial-gradient(circle at 90% 25%, rgba(48, 209, 88, 0.05) 0%, transparent 40%),
+    #f5f5f7;
+}
+
+/* Apple Grid */
+.dark .apple-grid {
   background-size: 48px 48px;
   background-image: 
     linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+}
+
+.light .apple-grid {
+  background-size: 48px 48px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.025) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.025) 1px, transparent 1px);
 }

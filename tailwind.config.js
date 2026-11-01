@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: 'class',
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -22,6 +23,12 @@ export default {
           'text': '#f5f5f7',
           'text-dim': '#86868b',
           'text-faint': '#424245',
+          // Light Mode Palette
+          'light-bg': '#f5f5f7',
+          'light-card': 'rgba(255, 255, 255, 0.82)',
+          'light-border': 'rgba(0, 0, 0, 0.08)',
+          'light-text': '#1d1d1f',
+          'light-text-dim': '#6e6e73',
         }
       },
       fontFamily: {
@@ -50,9 +57,11 @@ export default {
       },
       boxShadow: {
         'apple-card': '0 25px 60px -15px rgba(0, 0, 0, 0.8)',
+        'apple-card-light': '0 20px 45px -10px rgba(0, 0, 0, 0.08)',
         'apple-glow': '0 0 60px -10px rgba(41, 151, 255, 0.3)',
         'apple-gold-glow': '0 0 60px -10px rgba(227, 168, 87, 0.3)',
         'apple-inner': 'inset 0 1px 1px 0 rgba(255, 255, 255, 0.18)',
+        'apple-inner-light': 'inset 0 1px 1px 0 rgba(255, 255, 255, 0.8)',
       },
       borderRadius: {
         'apple': '28px',

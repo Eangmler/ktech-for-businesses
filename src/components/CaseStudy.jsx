@@ -10,20 +10,22 @@ export default function CaseStudy({ onNext }) {
       <div className="max-w-7xl w-full mx-auto flex flex-col justify-center h-full max-h-[85vh]">
         {/* Apple Section Header */}
         <div className="mb-8 sm:mb-10 text-left">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 mb-3">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border dark:border-white/10 border-black/10 mb-3">
             <span className="w-2 h-2 rounded-full bg-[#f5a623]"></span>
-            <span className="text-[11px] font-medium tracking-tight text-[#f5f5f7] uppercase font-mono">
+            <span className="text-[11px] font-semibold tracking-tight uppercase font-mono text-[#f5a623]">
               Field Implementation Audit
             </span>
+            <span className="opacity-30">|</span>
+            <span className="text-[11px] dark:text-[#86868b] text-zinc-500">Live Case Proof</span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tightest text-white leading-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tightest dark:text-white text-zinc-900 leading-tight">
             Case Study:{' '}
-            <span className="bg-gradient-to-r from-white via-zinc-200 to-[#86868b] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#deb368] via-[#e8c788] to-[#86868b] bg-clip-text text-transparent">
               From Chaos to Centralized Control
             </span>
           </h2>
-          <p className="text-sm sm:text-base text-[#86868b] mt-2 font-normal max-w-2xl">
+          <p className="text-sm sm:text-base dark:text-[#86868b] text-zinc-600 mt-2 font-normal max-w-2xl">
             A real-world systems intervention transforming scattered channels into an automated operating unit.
           </p>
         </div>
@@ -40,24 +42,24 @@ export default function CaseStudy({ onNext }) {
               <div className="text-[11px] font-mono uppercase tracking-widest text-red-400 font-semibold mb-2">
                 Phase 01 · Friction
               </div>
-              <h3 className="text-xl sm:text-2xl font-bold text-white tracking-tight mb-4">
+              <h3 className="text-xl sm:text-2xl font-bold dark:text-white text-zinc-900 tracking-tight mb-4">
                 The Problem
               </h3>
-              <p className="text-sm text-[#86868b] leading-relaxed font-normal">
+              <p className="text-sm dark:text-[#86868b] text-zinc-600 leading-relaxed font-normal">
                 A local enterprise was struggling with scattered employee communications, unsecured local files, and lost leads on social media.
               </p>
             </div>
 
-            <div className="mt-6 pt-5 border-t border-white/10 space-y-2">
-              <div className="flex items-center gap-2 text-xs text-[#86868b]">
+            <div className="mt-6 pt-5 border-t dark:border-white/10 border-black/10 space-y-2">
+              <div className="flex items-center gap-2 text-xs dark:text-[#86868b] text-zinc-500">
                 <span className="w-1.5 h-1.5 rounded-full bg-red-400"></span>
                 <span>Unmonitored personal Gmails</span>
               </div>
-              <div className="flex items-center gap-2 text-xs text-[#86868b]">
+              <div className="flex items-center gap-2 text-xs dark:text-[#86868b] text-zinc-500">
                 <span className="w-1.5 h-1.5 rounded-full bg-red-400"></span>
                 <span>Confidential spreadsheets on laptops</span>
               </div>
-              <div className="flex items-center gap-2 text-xs text-[#86868b]">
+              <div className="flex items-center gap-2 text-xs dark:text-[#86868b] text-zinc-500">
                 <span className="w-1.5 h-1.5 rounded-full bg-red-400"></span>
                 <span>WhatsApp leads going cold overnight</span>
               </div>
@@ -74,15 +76,15 @@ export default function CaseStudy({ onNext }) {
               <div className="text-[11px] font-mono uppercase tracking-widest text-[#2997ff] font-semibold mb-2">
                 Phase 02 · Engineering
               </div>
-              <h3 className="text-xl sm:text-2xl font-bold text-white tracking-tight mb-4">
+              <h3 className="text-xl sm:text-2xl font-bold dark:text-white text-zinc-900 tracking-tight mb-4">
                 The Solution
               </h3>
-              <p className="text-sm text-[#f5f5f7] leading-relaxed font-normal">
+              <p className="text-sm dark:text-[#f5f5f7] text-zinc-800 leading-relaxed font-normal">
                 We deployed centralized Google Workspace administration for secure file management, configured Chrome Browser Cloud Management, and implemented automated WhatsApp CRM flows to catch every inbound lead.
               </p>
             </div>
 
-            <div className="mt-6 pt-5 border-t border-white/10 space-y-2">
+            <div className="mt-6 pt-5 border-t dark:border-white/10 border-black/10 space-y-2">
               <div className="flex items-center gap-2 text-xs text-[#2997ff]">
                 <CheckCircle2 className="w-3.5 h-3.5" />
                 <span>Centralized Workspace IAM Admin</span>
@@ -108,27 +110,27 @@ export default function CaseStudy({ onNext }) {
               <div className="text-[11px] font-mono uppercase tracking-widest text-[#30d158] font-semibold mb-2">
                 Phase 03 · Outcome
               </div>
-              <h3 className="text-xl sm:text-2xl font-bold text-white tracking-tight mb-4">
+              <h3 className="text-xl sm:text-2xl font-bold dark:text-white text-zinc-900 tracking-tight mb-4">
                 The Result
               </h3>
-              <p className="text-sm text-[#86868b] leading-relaxed font-normal">
+              <p className="text-sm dark:text-[#86868b] text-zinc-600 leading-relaxed font-normal">
                 Zero lost documents, 100% staff onboarding compliance, and immediate automated responses to 24/7 sales inquiries.
               </p>
             </div>
 
             {/* Apple Style Metric Chips */}
-            <div className="mt-6 pt-5 border-t border-white/10 grid grid-cols-3 gap-2">
-              <div className="p-2.5 rounded-xl bg-white/5 border border-white/10 text-center">
-                <div className="text-base font-bold text-white">0</div>
-                <div className="text-[9px] uppercase tracking-wider text-[#86868b] mt-0.5">Lost Docs</div>
+            <div className="mt-6 pt-5 border-t dark:border-white/10 border-black/10 grid grid-cols-3 gap-2">
+              <div className="p-2.5 rounded-xl dark:bg-white/5 bg-black/5 border dark:border-white/10 border-black/10 text-center">
+                <div className="text-base font-bold dark:text-white text-zinc-900">0</div>
+                <div className="text-[9px] uppercase tracking-wider dark:text-[#86868b] text-zinc-500 mt-0.5">Lost Docs</div>
               </div>
-              <div className="p-2.5 rounded-xl bg-white/5 border border-white/10 text-center">
+              <div className="p-2.5 rounded-xl dark:bg-white/5 bg-black/5 border dark:border-white/10 border-black/10 text-center">
                 <div className="text-base font-bold text-[#30d158]">100%</div>
-                <div className="text-[9px] uppercase tracking-wider text-[#86868b] mt-0.5">Compliant</div>
+                <div className="text-[9px] uppercase tracking-wider dark:text-[#86868b] text-zinc-500 mt-0.5">Compliant</div>
               </div>
-              <div className="p-2.5 rounded-xl bg-white/5 border border-white/10 text-center">
+              <div className="p-2.5 rounded-xl dark:bg-white/5 bg-black/5 border dark:border-white/10 border-black/10 text-center">
                 <div className="text-base font-bold text-[#2997ff]">&lt;3s</div>
-                <div className="text-[9px] uppercase tracking-wider text-[#86868b] mt-0.5">Response</div>
+                <div className="text-[9px] uppercase tracking-wider dark:text-[#86868b] text-zinc-500 mt-0.5">Response</div>
               </div>
             </div>
           </div>
@@ -136,15 +138,15 @@ export default function CaseStudy({ onNext }) {
 
         {/* Footer Navigation Bar */}
         <div className="mt-8 flex items-center justify-between">
-          <span className="text-xs text-[#86868b]">
-            Swipe horizontally or use arrows to view pricing
+          <span className="text-xs dark:text-[#86868b] text-zinc-500">
+            Phase 04: Custom Enterprise Engineering Architecture
           </span>
           <button
             onClick={onNext}
-            className="inline-flex items-center gap-2 text-xs font-semibold text-white hover:text-[#2997ff] transition-colors"
+            className="inline-flex items-center gap-2 text-xs font-semibold dark:text-white text-zinc-900 hover:text-[#2997ff] transition-colors group"
           >
-            <span>See Services &amp; Pricing</span>
-            <ArrowRight className="w-4 h-4" />
+            <span>See Systems Architecture</span>
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </button>
         </div>
       </div>

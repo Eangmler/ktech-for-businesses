@@ -25,17 +25,17 @@ export default function Hero({ onNext }) {
         {/* Left Column: Keynote Typography & CTA */}
         <div className="lg:col-span-7 flex flex-col items-start text-left z-10">
           {/* Apple Eyebrow Pill */}
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 backdrop-blur-xl mb-6 shadow-sm">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 dark:bg-white/5 bg-black/5 border dark:border-white/10 border-black/10 backdrop-blur-xl mb-6 shadow-sm">
             <span className="w-2 h-2 rounded-full bg-[#30d158] animate-pulse"></span>
-            <span className="text-xs font-medium tracking-tight text-[#f5f5f7]">
+            <span className="text-xs font-medium tracking-tight dark:text-[#f5f5f7] text-zinc-900">
               Apple-Grade Systems Architecture
             </span>
-            <span className="text-white/20">|</span>
-            <span className="text-xs text-[#86868b]">Accra &amp; Remote</span>
+            <span className="opacity-30">|</span>
+            <span className="text-xs dark:text-[#86868b] text-zinc-500">Accra &amp; Remote</span>
           </div>
 
           {/* Exact Headline in Apple Store Typography */}
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tightest leading-[1.08] text-white mb-6">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tightest leading-[1.08] dark:text-white text-zinc-950 mb-6">
             Enterprise-Grade IT &amp;{' '}
             <span className="bg-gradient-to-r from-[#2997ff] via-[#70b6ff] to-[#deb368] bg-clip-text text-transparent">
               Automation
@@ -44,7 +44,7 @@ export default function Hero({ onNext }) {
           </h1>
 
           {/* Exact Subheadline */}
-          <p className="text-base sm:text-lg text-[#86868b] max-w-2xl font-normal leading-relaxed mb-8">
+          <p className="text-base sm:text-lg dark:text-[#86868b] text-zinc-600 max-w-2xl font-normal leading-relaxed mb-8">
             Stop losing sales to unread WhatsApps, messy Gmail accounts, and disorganized staff. We
             build the systems that run your business while you sleep.
           </p>
@@ -56,7 +56,7 @@ export default function Hero({ onNext }) {
               href="https://wa.me/233248147952?text=Hello%20kTech%2C%20I%20am%20interested%20in%20enterprise%20IT%20and%20automation%20systems%20for%20my%20business."
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-full bg-white text-black hover:bg-zinc-200 text-sm font-semibold tracking-tight transition-all duration-300 shadow-[0_4px_25px_rgba(255,255,255,0.2)] hover:scale-[1.02] active:scale-[0.98]"
+              className="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-full bg-white dark:bg-white text-black hover:bg-zinc-200 text-sm font-semibold tracking-tight transition-all duration-300 shadow-[0_4px_25px_rgba(0,0,0,0.15)] dark:shadow-[0_4px_25px_rgba(255,255,255,0.2)] hover:scale-[1.02] active:scale-[0.98]"
             >
               <WhatsAppIcon className="w-4 h-4 text-black" />
               <span>Chat on WhatsApp</span>
@@ -65,10 +65,10 @@ export default function Hero({ onNext }) {
             {/* Next Slide Pill */}
             <button
               onClick={onNext}
-              className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 text-sm font-medium text-[#f5f5f7] tracking-tight backdrop-blur-xl transition-all duration-300 group"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full dark:bg-white/5 bg-black/5 hover:dark:bg-white/10 hover:bg-black/10 border dark:border-white/10 border-black/10 text-sm font-medium dark:text-[#f5f5f7] text-zinc-900 tracking-tight backdrop-blur-xl transition-all duration-300 group"
             >
-              <span>Explore Case Study</span>
-              <ArrowRight className="w-4 h-4 text-[#86868b] group-hover:text-white group-hover:translate-x-1 transition-all" />
+              <span>Explore Methodology</span>
+              <ArrowRight className="w-4 h-4 dark:text-[#86868b] text-zinc-500 group-hover:dark:text-white group-hover:text-black group-hover:translate-x-1 transition-all" />
             </button>
           </div>
         </div>
@@ -77,10 +77,10 @@ export default function Hero({ onNext }) {
         <div className="lg:col-span-5 w-full z-10">
           <div className="apple-glass rounded-apple p-6 sm:p-7 relative">
             {/* Apple Home Section Header */}
-            <div className="flex items-center justify-between pb-5 mb-5 border-b border-white/10">
+            <div className="flex items-center justify-between pb-5 mb-5 border-b dark:border-white/10 border-black/10">
               <div className="flex items-center gap-2.5">
                 <div className="w-3 h-3 rounded-full bg-[#f5a623] shadow-[0_0_10px_#f5a623]"></div>
-                <span className="text-xs font-semibold uppercase tracking-wider text-white">
+                <span className="text-xs font-semibold uppercase tracking-wider dark:text-white text-zinc-900">
                   kTech Home Dashboard
                 </span>
               </div>
@@ -96,18 +96,18 @@ export default function Hero({ onNext }) {
                 onClick={() => toggleTile('workspace')}
                 className={`p-4 rounded-2xl cursor-pointer transition-all duration-300 border ${
                   activeTiles.workspace
-                    ? 'bg-white/15 border-white/30 shadow-lg'
-                    : 'bg-white/5 border-white/5 opacity-60'
+                    ? 'dark:bg-white/15 bg-white border-white/30 dark:border-white/30 border-black/10 shadow-lg'
+                    : 'dark:bg-white/5 bg-black/5 dark:border-white/5 border-transparent opacity-60'
                 }`}
               >
                 <div className="flex items-center justify-between mb-3">
-                  <div className={`p-2 rounded-xl ${activeTiles.workspace ? 'bg-[#2997ff] text-white' : 'bg-white/10 text-white/50'}`}>
+                  <div className={`p-2 rounded-xl ${activeTiles.workspace ? 'bg-[#2997ff] text-white' : 'dark:bg-white/10 bg-black/10 dark:text-white/50 text-zinc-400'}`}>
                     <HardDrive className="w-4 h-4" />
                   </div>
-                  <div className={`w-2 h-2 rounded-full ${activeTiles.workspace ? 'bg-[#30d158]' : 'bg-zinc-600'}`}></div>
+                  <div className={`w-2 h-2 rounded-full ${activeTiles.workspace ? 'bg-[#30d158]' : 'bg-zinc-400 dark:bg-zinc-600'}`}></div>
                 </div>
-                <div className="text-xs font-semibold text-white">Google Workspace</div>
-                <div className="text-[10px] text-[#86868b] mt-0.5">Centralized Admin</div>
+                <div className="text-xs font-semibold dark:text-white text-zinc-900">Google Workspace</div>
+                <div className="text-[10px] dark:text-[#86868b] text-zinc-500 mt-0.5">Centralized Admin</div>
               </div>
 
               {/* Tile 2: WhatsApp CRM */}
@@ -115,18 +115,18 @@ export default function Hero({ onNext }) {
                 onClick={() => toggleTile('whatsapp')}
                 className={`p-4 rounded-2xl cursor-pointer transition-all duration-300 border ${
                   activeTiles.whatsapp
-                    ? 'bg-white/15 border-white/30 shadow-lg'
-                    : 'bg-white/5 border-white/5 opacity-60'
+                    ? 'dark:bg-white/15 bg-white border-white/30 dark:border-white/30 border-black/10 shadow-lg'
+                    : 'dark:bg-white/5 bg-black/5 dark:border-white/5 border-transparent opacity-60'
                 }`}
               >
                 <div className="flex items-center justify-between mb-3">
-                  <div className={`p-2 rounded-xl ${activeTiles.whatsapp ? 'bg-[#30d158] text-black' : 'bg-white/10 text-white/50'}`}>
+                  <div className={`p-2 rounded-xl ${activeTiles.whatsapp ? 'bg-[#30d158] text-black' : 'dark:bg-white/10 bg-black/10 dark:text-white/50 text-zinc-400'}`}>
                     <Zap className="w-4 h-4" />
                   </div>
-                  <div className={`w-2 h-2 rounded-full ${activeTiles.whatsapp ? 'bg-[#30d158]' : 'bg-zinc-600'}`}></div>
+                  <div className={`w-2 h-2 rounded-full ${activeTiles.whatsapp ? 'bg-[#30d158]' : 'bg-zinc-400 dark:bg-zinc-600'}`}></div>
                 </div>
-                <div className="text-xs font-semibold text-white">WhatsApp Bot</div>
-                <div className="text-[10px] text-[#86868b] mt-0.5">&lt;3s Auto-Closing</div>
+                <div className="text-xs font-semibold dark:text-white text-zinc-900">WhatsApp Bot</div>
+                <div className="text-[10px] dark:text-[#86868b] text-zinc-500 mt-0.5">&lt;3s Auto-Closing</div>
               </div>
 
               {/* Tile 3: Chrome Policy */}
@@ -134,18 +134,18 @@ export default function Hero({ onNext }) {
                 onClick={() => toggleTile('chrome')}
                 className={`p-4 rounded-2xl cursor-pointer transition-all duration-300 border ${
                   activeTiles.chrome
-                    ? 'bg-white/15 border-white/30 shadow-lg'
-                    : 'bg-white/5 border-white/5 opacity-60'
+                    ? 'dark:bg-white/15 bg-white border-white/30 dark:border-white/30 border-black/10 shadow-lg'
+                    : 'dark:bg-white/5 bg-black/5 dark:border-white/5 border-transparent opacity-60'
                 }`}
               >
                 <div className="flex items-center justify-between mb-3">
-                  <div className={`p-2 rounded-xl ${activeTiles.chrome ? 'bg-[#f5a623] text-black' : 'bg-white/10 text-white/50'}`}>
+                  <div className={`p-2 rounded-xl ${activeTiles.chrome ? 'bg-[#f5a623] text-black' : 'dark:bg-white/10 bg-black/10 dark:text-white/50 text-zinc-400'}`}>
                     <ShieldCheck className="w-4 h-4" />
                   </div>
-                  <div className={`w-2 h-2 rounded-full ${activeTiles.chrome ? 'bg-[#30d158]' : 'bg-zinc-600'}`}></div>
+                  <div className={`w-2 h-2 rounded-full ${activeTiles.chrome ? 'bg-[#30d158]' : 'bg-zinc-400 dark:bg-zinc-600'}`}></div>
                 </div>
-                <div className="text-xs font-semibold text-white">Chrome Cloud IAM</div>
-                <div className="text-[10px] text-[#86868b] mt-0.5">Zero File Leaks</div>
+                <div className="text-xs font-semibold dark:text-white text-zinc-900">Chrome Cloud IAM</div>
+                <div className="text-[10px] dark:text-[#86868b] text-zinc-500 mt-0.5">Zero File Leaks</div>
               </div>
 
               {/* Tile 4: Cloud POS */}
@@ -153,25 +153,25 @@ export default function Hero({ onNext }) {
                 onClick={() => toggleTile('crm')}
                 className={`p-4 rounded-2xl cursor-pointer transition-all duration-300 border ${
                   activeTiles.crm
-                    ? 'bg-white/15 border-white/30 shadow-lg'
-                    : 'bg-white/5 border-white/5 opacity-60'
+                    ? 'dark:bg-white/15 bg-white border-white/30 dark:border-white/30 border-black/10 shadow-lg'
+                    : 'dark:bg-white/5 bg-black/5 dark:border-white/5 border-transparent opacity-60'
                 }`}
               >
                 <div className="flex items-center justify-between mb-3">
-                  <div className={`p-2 rounded-xl ${activeTiles.crm ? 'bg-purple-500 text-white' : 'bg-white/10 text-white/50'}`}>
+                  <div className={`p-2 rounded-xl ${activeTiles.crm ? 'bg-purple-500 text-white' : 'dark:bg-white/10 bg-black/10 dark:text-white/50 text-zinc-400'}`}>
                     <Cpu className="w-4 h-4" />
                   </div>
-                  <div className={`w-2 h-2 rounded-full ${activeTiles.crm ? 'bg-[#30d158]' : 'bg-zinc-600'}`}></div>
+                  <div className={`w-2 h-2 rounded-full ${activeTiles.crm ? 'bg-[#30d158]' : 'bg-zinc-400 dark:bg-zinc-600'}`}></div>
                 </div>
-                <div className="text-xs font-semibold text-white">Cloud POS &amp; CRM</div>
-                <div className="text-[10px] text-[#86868b] mt-0.5">Realtime Ledgers</div>
+                <div className="text-xs font-semibold dark:text-white text-zinc-900">Cloud POS &amp; CRM</div>
+                <div className="text-[10px] dark:text-[#86868b] text-zinc-500 mt-0.5">Realtime Ledgers</div>
               </div>
             </div>
 
             {/* Apple Home Accessory Info Bar */}
-            <div className="mt-5 pt-4 border-t border-white/10 flex items-center justify-between text-[11px] text-[#86868b]">
+            <div className="mt-5 pt-4 border-t dark:border-white/10 border-black/10 flex items-center justify-between text-[11px] dark:text-[#86868b] text-zinc-500">
               <span>Tap tiles to simulate active business nodes</span>
-              <span className="text-white font-mono">100% Uptime</span>
+              <span className="dark:text-white text-zinc-900 font-mono font-medium">100% Uptime</span>
             </div>
           </div>
         </div>
